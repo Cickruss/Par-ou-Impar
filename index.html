@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par ou Ímpar</title>
+    <link rel="icon" type="image/x-icon" href="Res/icon.ico">
+</head>
+<body>
+    <center>
+<div id="inicio">
+    <h1>PAR OU IMPAR</h1>
+    
+    <div class="cardlc">
+        <img width="200" id="card1" src="Res/card1.png" alt="">
+        <img width="200" id="card2" src="Res/card2.png" alt="">
+    </div>
+
+    <div class="playerlc">
+        <input id="player1" type="text" maxlength="6" placeholder="PLAYER 1" class="player1">
+        <input id="player2" type="text" maxlength="6" placeholder="PLAYER 2" class="player2">
+    </div>
+
+    <div class="escolhalc">
+        <label id="escolhap1"></label>
+        <label id="escolhap2"></label>
+    </div>
+
+    <button onclick="rodar()" class="button1">JOGAR </button>
+
+    <div class="resescolhalc">
+        <label id="resplayer1"></label>
+        <label id="resplayer2"></label>
+    </div>
+</div>
+
+<div style="display: none;" id="rodada" >
+    
+    <label id="venceu"><h1>ROUND 1</h1></label>
+    <div id="resultadorodada">
+    <div class="cardlc">
+    <img width="200" id="card1" src="Res/card1.png" alt="">
+    <img width="200" id="card2" src="Res/card2.png" alt="">
+    </div>
+    <button onclick="round1()" class="button2">JOGAR </button>
+    <br>
+    <input id="n1r1" type="password" maxlength="1" placeholder="" class="player1">
+    <input id="n2r1" type="password" maxlength="1" placeholder="" class="player2">
+    </div>
+    <label id="pontuacaop1"></label>
+    <label id="pontuacaop2"></label>
+    
+</div>
+
+<div style="display: none;" id="telav">
+    <label id="vitoria"></label>
+</div>
+
+
+
+    </center>
+</body>
+</html>
